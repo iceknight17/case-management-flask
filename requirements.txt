@@ -1,0 +1,6 @@
+flask
+pymongo
+uuid
+hashlib
+flask_cors
+requests
