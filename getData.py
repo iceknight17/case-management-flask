@@ -150,9 +150,10 @@ def get_data_from_collection1():
     print(f'caseId: ' , case_number)
     # print(f"account_code", account_code)
 
-    data = collection3.find_one(query,{"_id": 0})
+    # data = collection3.find_one(query,{"_id": 0})
 
-    return jsonify(data["booking_details"])
+    # return jsonify(data["booking_details"])
+    return jsonify({"caseId": case_number})
 
 @app.route('/api/get-shipment-details', methods=['GET']) #get the particular shipment detail
 def get_data_from_collection2():
